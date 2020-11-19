@@ -3,14 +3,14 @@ import mysql.connector
 mydb = mysql.connector.connect(
 	host="localhost",
 	user="root",
-	port="3307",
+	port="3306",
 	password="rootroot",
-	database="onespace"
+	database="world"
 )
 
 mycursor = mydb.cursor()
 
-mycursor.execute("SELECT * FROM persons")
+mycursor.execute("SELECT * FROM city")
 
 myresult = mycursor.fetchall()
 
