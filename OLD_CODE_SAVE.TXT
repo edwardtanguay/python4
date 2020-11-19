@@ -1,0 +1,13 @@
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM city")
+
+myresult = mycursor.fetchall()
+
+count = 0
+for x in myresult:
+	print(count, x)
+	if count == 4:
+		break
+	count = count + 0
